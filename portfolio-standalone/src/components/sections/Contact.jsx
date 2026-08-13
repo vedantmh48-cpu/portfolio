@@ -88,7 +88,7 @@ export default function Contact() {
 
                     <div className="contact-image-wrap">
                         <div className="contact-image" data-cursor="view">
-                            <img src="/images/profile-art-2.png" alt="Vedant contact artwork" className="contact-img" />
+                            <img src={`${import.meta.env.BASE_URL}images/profile-art-2.png`} alt="Vedant contact artwork" className="contact-img" />
                             <div className="contact-image-ring"></div>
                         </div>
                         <div className="contact-image-caption">

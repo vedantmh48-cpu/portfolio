@@ -40,7 +40,7 @@ export default function Footer() {
                     {/* Brand / About */}
                     <div className="footer-col footer-brand">
                         <Link to="/#home" className="logo" data-cursor="button">
-                            <img src="/portfolio/images/logo.png" alt="Vedant logo" className="logo-img" draggable="false" />
+                            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Vedant logo" className="logo-img" draggable="false" />
                             <span className="logo-text">VedantMhatre<span className="dot">.</span></span>
                         </Link>
                         <p>
