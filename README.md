@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Vedant's Portfolio
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&section=header&text=VEDANT'S%20PORTFOLIO&fontSize=50&fontColor=FFFFFF&fontAlignY=40&animation=fadeIn&desc=WEB%20DEVELOPER%20%7C%20REACT%20%2B%20VITE%20%7C%20GSAP%20ANIMATIONS&descAlignY=62&descSize=16&fontAlign=50&color=0:0F172A,50:646CFF,100:0F172A" width="100%" alt="Vedant's Portfolio Banner"/>
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-vedantmh48--cpu.github.io-6366f1?style=for-the-badge&logo=githubpages&logoColor=white)](https://vedantmh48-cpu.github.io/portfolio/)
 [![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
