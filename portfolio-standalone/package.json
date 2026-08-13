@@ -1,0 +1,25 @@
+{
+    "name": "portfolio-standalone",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "deploy": "gh-pages -d dist",
+        "predeploy": "vite build"
+    },
+    "dependencies": {
+        "gsap": "^3.12.5",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-icons": "^5.7.0",
+        "react-router-dom": "^6.26.2"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.3.1",
+        "gh-pages": "^6.3.0",
+        "vite": "^5.4.8"
+    }
+}
