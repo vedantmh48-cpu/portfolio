@@ -169,7 +169,7 @@ export default function Hero() {
                     <span className="float-tag tag-3">◆ Pixel Perfect</span>
 
                     <div className="hero-art" data-cursor="view">
-                        <img src="/images/profile-art-1.png" alt="Vedant creative artwork" id="heroArt" className="hero-art-img" />
+                        <img src="/portfolio/images/profile-art-1.png" alt="Vedant creative artwork" id="heroArt" className="hero-art-img" />
                         <div className="art-ring"></div>
                     </div>
 

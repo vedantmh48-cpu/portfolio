@@ -56,7 +56,7 @@ export default function Preloader({ onFinish }) {
                     <div className="preloader-ring"></div>
                     <div className="preloader-ring outer"></div>
                     <img
-                        src="logo.png"
+                        src="/portfolio/logo.png"
                         alt="Vedant logo"
                         className="preloader-logo"
                         draggable="false"

@@ -51,7 +51,7 @@ export default function Navbar() {
             <header className={`nav${scrolled ? " scrolled" : ""}`} id="navbar">
                 <nav className="nav-inner">
                     <Link to="/#home" className="logo" data-cursor="button" onClick={(e) => handleNavClick(e, "/#home")}>
-                        <img src="logo.png" alt="Vedant logo" className="logo-img" draggable="false" />
+                        <img src="/portfolio/logo.png" alt="Vedant logo" className="logo-img" draggable="false" />
                         <span className="logo-text">VedantMhatre<span className="dot">.</span></span>
                     </Link>
 
