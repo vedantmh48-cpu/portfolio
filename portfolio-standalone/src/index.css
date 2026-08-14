@@ -2516,6 +2516,95 @@ section {
     }
 }
 
+/* ---------- Dynamic Island (mobile) ---------- */
+.island-label {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Default: full-width transparent header with logo + hamburger */
+    .nav {
+        padding: 16px 0;
+        background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border-bottom: none;
+        transition: top 0.5s var(--ease-expo), left 0.5s var(--ease-expo),
+            transform 0.5s var(--ease-expo), width 0.5s var(--ease-expo),
+            border-radius 0.5s var(--ease-expo), background 0.5s var(--ease),
+            border-color 0.5s var(--ease), box-shadow 0.5s var(--ease),
+            padding 0.5s var(--ease);
+    }
+
+    .nav-inner {
+        width: 92%;
+    }
+
+    /* Scrolled: morph into a centered dynamic island pill */
+    .nav.scrolled {
+        top: calc(12px + env(safe-area-inset-top, 0px));
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: auto;
+        padding: 0;
+        padding-top: 0;
+        border-radius: 100px;
+        background: rgba(10, 10, 12, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--border-strong);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 45, 85, 0.15);
+        transition: top 0.5s var(--ease-expo), left 0.5s var(--ease-expo),
+            transform 0.5s var(--ease-expo), width 0.5s var(--ease-expo),
+            border-radius 0.5s var(--ease-expo), background 0.5s var(--ease),
+            border-color 0.5s var(--ease), box-shadow 0.5s var(--ease);
+    }
+
+    .nav.scrolled .nav-inner {
+        width: auto;
+        padding: 8px 10px;
+        gap: 0;
+    }
+
+    /* Hide logo text, keep only the small logo mark */
+    .nav.scrolled .logo-text {
+        display: none;
+    }
+
+    .nav.scrolled .logo-img {
+        height: 30px;
+    }
+
+    /* Show the island label in the center */
+    .nav.scrolled .island-label {
+        display: inline-flex;
+        align-items: center;
+        font-family: var(--font-display);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text);
+        white-space: nowrap;
+        padding: 0 14px;
+    }
+
+    .nav.scrolled .island-label .dot {
+        color: var(--accent);
+    }
+
+    /* Hamburger stays inside the pill */
+    .nav.scrolled .hamburger {
+        padding: 4px;
+        width: 32px;
+    }
+
+    .nav.scrolled .hamburger span {
+        height: 1.5px;
+    }
+}
+
 /* ---------- Reduced Motion ---------- */
 @media (prefers-reduced-motion: reduce) {
 

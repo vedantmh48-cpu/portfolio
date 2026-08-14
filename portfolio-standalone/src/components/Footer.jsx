@@ -26,8 +26,8 @@ const contactLinks = [
     { label: "Email", href: "mailto:vedantmh48@gmail.com", icon: <FaEnvelope /> },
     { label: "GitHub", href: "https://github.com/vedantmh48-cpu", icon: <FaGithub /> },
     { label: "LinkedIn", href: "https://linkedin.com", icon: <FaLinkedin /> },
-    { label: "Instagram", href: "https://instagram.com", icon: <FaInstagram /> },
-    { label: "WhatsApp", href: "https://wa.me/919999999999?text=Hi%20Vedant!%20I'd%20love%20to%20work%20with%20you.", icon: <FaWhatsapp /> },
+    { label: "Instagram", href: "https://www.instagram.com/v1dant_14/", icon: <FaInstagram /> },
+    { label: "WhatsApp", href: "https://wa.me/919028076580?text=Hi%20Vedant!%20I'd%20love%20to%20work%20with%20you.", icon: <FaWhatsapp /> },
 ];
 
 export default function Footer() {
