@@ -51,36 +51,27 @@ export default function Preloader({ onFinish }) {
     return (
         <div className={`preloader${leaving ? " preloader-leave" : ""}`}>
             <div className="preloader-inner">
-                {/* Logo with pulsing rings */}
-                <div className="preloader-logo-wrap">
-                    <div className="preloader-ring"></div>
-                    <div className="preloader-ring outer"></div>
+                <div className="preloader-art-frame">
                     <img
-                        src={`${import.meta.env.BASE_URL}logo.png`}
-                        alt="Vedant logo"
-                        className="preloader-logo"
+                        src={`${import.meta.env.BASE_URL}loadingpage1.png`}
+                        alt="Vedant Mhatre — Crafting something amazing"
+                        className="preloader-artwork"
                         draggable="false"
                     />
+                    <div
+                        className="preloader-bar-wrap"
+                        role="progressbar"
+                        aria-label="Loading portfolio"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow={Math.round(progress)}
+                    >
+                        <div className="preloader-bar" style={{ width: `${progress}%` }} />
+                    </div>
+                    <span className="preloader-status" role="status" aria-live="polite">
+                        {Math.round(progress)}% loaded
+                    </span>
                 </div>
-
-                {/* Animated name */}
-                <div className="preloader-name">
-                    {"VedantMhatre".split("").map((char, i) => (
-                        <span key={i} className="preloader-char" style={{ animationDelay: `${i * 0.08}s` }}>
-                            {char}
-                        </span>
-                    ))}
-                    <span className="preloader-dot">.</span>
-                </div>
-
-                {/* Tagline */}
-                <p className="preloader-tagline">Creative Developer & Designer</p>
-
-                {/* Progress bar */}
-                <div className="preloader-bar-wrap">
-                    <div className="preloader-bar" style={{ width: `${progress}%` }}></div>
-                </div>
-                <div className="preloader-percent">{Math.round(progress)}%</div>
             </div>
         </div>
     );

@@ -3,10 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   { label: "Home", to: "/#home" },
-  { label: "Projects", to: "/#projects" },
-  { label: "Clients", to: "/#clients" },
   { label: "About", to: "/#about" },
   { label: "Skills", to: "/#skills" },
+  { label: "Projects", to: "/#projects" },
+  { label: "Education", to: "/#education" },
+  { label: "Achievements", to: "/#achievements" },
   { label: "Contact", to: "/#contact" },
 ];
 
@@ -51,7 +52,7 @@ export default function Navbar() {
       <header className={`nav${scrolled ? " scrolled" : ""}`} id="navbar">
         <nav className="nav-inner">
           <Link to="/#home" className="logo" data-cursor="button" onClick={(e) => handleNavClick(e, "/#home")}>
-            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Vedant logo" className="logo-img" draggable="false" />
+            <img src={`${import.meta.env.BASE_URL}Logo1.png`} alt="Vedant logo" className="logo-img" draggable="false" />
             <span className="logo-text">VedantMhatre<span className="dot">.</span></span>
           </Link>
 
@@ -67,9 +68,9 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <Link to="/#contact" className="nav-cta" data-cursor="button" onClick={(e) => handleNavClick(e, "/#contact")}>
-            Let's Talk
-          </Link>
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} className="nav-cta" data-cursor="button" download>
+            Download Resume
+          </a>
 
           <button
             className={`hamburger${menuOpen ? " active" : ""}`}

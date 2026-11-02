@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
-import CustomCursor from "./components/CustomCursor.jsx";
 import AmbientBackground from "./components/AmbientBackground.jsx";
 import ScrollProgress from "./components/ScrollProgress.jsx";
 import Preloader from "./components/Preloader.jsx";
@@ -33,7 +32,6 @@ function App() {
     return (
         <>
             <Preloader onFinish={handlePreloaderFinish} />
-            <CustomCursor />
             <AmbientBackground />
             <ScrollProgress />
             <ScrollToTop />

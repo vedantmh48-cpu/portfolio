@@ -49,10 +49,9 @@ export default function Contact() {
     };
 
     return (
-        <section className="contact" id="contact">
+        <section className="contact" id="contact" data-section="05">
             <div className="container">
-
-                <p className="section-label center" data-reveal>Let's Connect</p>
+                <p className="section-label center" data-reveal><span className="label-index">05</span>Let's Connect</p>
                 <h2 className="section-title center" data-reveal>
                     Let's Make Something
                     <em className="accent-gradient">Awesome Together.</em>
@@ -88,7 +87,7 @@ export default function Contact() {
 
                     <div className="contact-image-wrap">
                         <div className="contact-image" data-cursor="view">
-                            <img src={`${import.meta.env.BASE_URL}images/profile-art-2.png`} alt="Vedant contact artwork" className="contact-img" />
+                            <img src={`${import.meta.env.BASE_URL}images/profile-art-1.png`} alt="Vedant contact artwork" className="contact-img" />
                             <div className="contact-image-ring"></div>
                         </div>
                         <div className="contact-image-caption">

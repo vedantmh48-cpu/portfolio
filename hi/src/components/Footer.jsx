@@ -40,7 +40,7 @@ export default function Footer() {
                     {/* Brand / About */}
                     <div className="footer-col footer-brand">
                         <Link to="/#home" className="logo" data-cursor="button">
-                            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Vedant logo" className="logo-img" draggable="false" />
+                            <img src={`${import.meta.env.BASE_URL}Logo1.png`} alt="Vedant logo" className="logo-img" draggable="false" />
                             <span className="logo-text">VedantMhatre<span className="dot">.</span></span>
                         </Link>
                         <p>
@@ -115,6 +115,8 @@ export default function Footer() {
                 </div>
 
                 {/* Footer Bottom */}
+                <div className="footer-watermark" aria-hidden="true" data-watermark="Vedant">Vedant</div>
+
                 <div className="footer-bottom">
                     <p className="copyright">
                         © {year} Vedant. Designed & built with intention.
